@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="en" data-framework="es6">
+	<head>
+		<meta charset="utf-8">
+		<title>Robiul's Help Desk</title>
+		<link rel="stylesheet" href="node_modules/todomvc-app-css/index.css">
+	</head>
+	<body>
+		<center><h1><a href="https://www.facebook.com/helal.thakurgaon">রবিউলের</a> হেল্প ডেস্ক</h1></center>
+		<hr>
+		<center><h2>মোঃ রবিউল ইসলাম, প্রফেশনাল একাডেমিক কনসালটেন্ট। সেমিস্টার ফাইনালের আগে আমি আমার প্রোগ্রামিং কনটেস্ট, খাওয়া-দাওয়া, নিজের পড়ালেখা বাদ রেখেই অন্যদের বিভিন্ন টপিক বুঝিয়ে থাকি। এটা আমার সেই কাজের জন্য তৈরী করা ওয়েবসাইট, আপনি নিজে পরিশ্রম না করে আমার দ্বারা ফ্রিতে যদি বিভিন্ন টপিক বুঝিয়ে নিতে চান, তাহলে নিচের সিরিয়ালে আপনার নাম যুক্ত করুন।  আর পরিক্ষার পরও কিন্তু আমি বেচেঁ থাকি এবং ক্লাসে যাই, একটু খোজ খবর নিবেন।  ধন্যবাদ। </h2></center>
+		<section class="todoapp">
+			<header class="header">
+				<input class="new-todo" placeholder="Add your name to the scheduled list" autofocus>
+			</header>
+			<section style="display:none" class="main">
+				<input id="toggle-all" class="toggle-all" type="checkbox">
+				<label for="toggle-all">Mark all as complete</label>
+				<ul class="todo-list"></ul>
+				<footer class="footer">
+					<span class="todo-count"></span>
+					<ul class="filters">
+						<li>
+							<a href="#/" class="selected">All</a>
+						</li>
+						<li>
+						<a href="#/active">Active</a>
+						</li>
+						<li>
+						<a href="#/completed">Completed</a>
+						</li>
+					</ul>
+					<button class="clear-completed">Clear completed</button>
+				</footer>
+			</section>
+		</section>
+		<footer class="info">
+			<p>Double-click to edit a todo</p>
+			<p>Written by <a href="http://twitter.com/lukeed05">Luke Edwards</a></p>
+			<p>Edited by <a href="http://twitter.com/ovebepari">Ove Bepari</a></p>
+			<p>Refactored by <a href="https://github.com/xorgy">Aaron Muir Hamilton</a></p>
+		</footer>
+		<script src="dist/bundle.js"></script>
+		<script src="node_modules/todomvc-common/base.js"></script>
+		<link rel="stylesheet" href="node_modules/todomvc-common/base.css">
+
+		<script type="text/javascript">
+			/* Fixed Data */
+			var faruq = {
+				"id":1,
+				"title":"Omar Faruq",
+				"completed":true
+			};
+
+			var faruq2 = {
+				"id":2,
+				"title":"Omar Faruq",
+				"completed":false
+			};
+
+			var mamun = {
+				"id":3,
+				"title":"Abdullah Al Mamun",
+				"completed":false
+			};
+
+			var ove = {
+				"id":4,
+				"title":"Ove Bepari",
+				"completed":false
+			};
+
+			var pranta = {
+				"id":5,
+				"title":"Pranta Saha",
+				"completed":false
+			};
+
+			var urmi = {
+				"id":6,
+				"title":"Urmi Akhter",
+				"completed":false
+			}
+
+			var afsana = {
+				"id":64,
+				"title":"Afsna Akhter",
+				"completed":false
+			};
+
+			var robin = {
+				"id":7,
+				"title":"Zahid Robin",
+				"completed":false
+			};
+
+			var sukrity = {
+				"id":8,
+				"title":"Sukrity Chakrabarty",
+				"completed":false
+			};
+
+			var fixed = [faruq, mamun, faruq2, ove, pranta, urmi, robin, afsana, sukrity];
+
+			/* Previously Saved Data */
+			/* Doing nothing with them for now */
+			var localStorage = window.localStorage;
+			var prevData = localStorage['todos-vanilla-es6'];
+
+			/* Setting fixed data */
+			localStorage['todos-vanilla-es6'] =  JSON.stringify(fixed);
+		</script>
+	</body>
+</html>
